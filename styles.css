@@ -1,0 +1,549 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #2134c4;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #eae7e7;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ff0000;
+}
+
+.hero {
+  background: url('images/logo2.png') no-repeat center center/cover;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #f6f4f4;
+  margin-top: 10px;
+}
+.hero {
+    position: relative;
+  }
+  
+  .hero h4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(175, 126, 227);
+  }
+  
+  .hero h4:nth-child(2) {
+    font-size: small;
+    color: #2134c4;
+  }
+  
+    
+  .hero h5 {
+    position: absolute;
+    bottom: 3%;
+    right: 11%;
+    margin: 0;
+    padding: 10px;
+    color: rgb(245, 242, 242);
+  }
+  
+  .hero h5:nth-child(2) {
+    font-size: small;
+  }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#intro {
+
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section */
+section {
+  padding: 50px 0;
+}
+
+/* Background colors for specific sections */
+#about {
+  background-color: #FFD700; /* Gold */
+}
+
+#services {
+  background: #0000FF;
+  /* Dark Turquoise */
+}
+
+#portfolio {
+  background-color: #FF69B4; /* Hot Pink */
+}
+
+#contact {
+  background-color: #FFE4B5; /* Moccasin */
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+
+/* Service Section */
+.service {
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.service ul li::before {
+  content: '✔';
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Images */
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button.vid {
+  display: inline-block;
+  background: #b50a0a;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.vid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button.vid:hover {
+  background: #10d520;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  center h2 {
+    font-size: 2rem;
+  }
+
+  .service {
+    padding: 15px;
+  }
+
+  .service h3 {
+    font-size: 1.5rem;
+  }
+
+  .service ul li {
+    font-size: 0.9rem;
+  }
+
+  button.vid {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Video */
+.vid{
+  background-color: #be0606;
+  color: white;
+  text-decoration: none;
+}
+.vid:hover{
+  background-color: #218838;
+}
+.video-container {
+  margin-top: 20px;
+}
+.client-review {
+  margin-top: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #e6f7ff, #ffffff); /* Light gradient background */
+  border: 1px solid #b3d9ff; /* Softer blue border */
+  border-radius: 8px; /* Slightly increased rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+}
+
+.client-review h3 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #0056b3; /* Darker blue for the heading */
+}
+
+.client-review p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #333; /* Neutral dark gray for better readability */
+}
+
+.client-review .rating {
+  font-weight: bold;
+  color: #ffa500; /* Gold color for the rating */
+}
+
+/* Contact Section */
+/* General Contact Button Styles */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-btn .icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
+
+/* WhatsApp Button */
+.contact-btn.whatsapp {
+  background: #25d366;
+}
+
+.contact-btn.whatsapp:hover {
+  background: #20b257;
+}
+
+/* Facebook Button */
+.contact-btn.facebook {
+  background: #4267B2;
+}
+
+.contact-btn.facebook:hover {
+  background: #365899;
+}
+
+/* Telegram Button */
+.contact-btn.telegram {
+  background: #0088cc;
+}
+
+.contact-btn.telegram:hover {
+  background: #007ab8;
+}
+
+/* Instagram Button */
+.contact-btn.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.contact-btn.instagram:hover {
+  background: linear-gradient(45deg, #e6683c, #f09433, #bc1888, #cc2366, #dc2743);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-btn {
+    justify-content: center;
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+
+/* For Tablets (Width between 600px and 900px) */
+@media (max-width: 768px) {
+  .top-bar .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .nav-list li {
+      margin: 10px 0;
+  }
+
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  #intro {
+      padding: 15px;
+      margin: 15px;
+  }
+
+
+  .service {
+    margin-bottom: 30px;
+  }
+
+  .service img {
+    max-width: 100%;
+  }
+
+  .contact-btn, .whatsapp-btn {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+}
+
+/* For Mobile Devices (Width between 480px and 600px) */
+@media (max-width: 600px) {
+  
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .service {
+    padding: 0 10px;
+  }
+
+  .service img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .contact-btn, .whatsapp-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* For Small Mobile Devices (Width below 480px) */
+@media (max-width: 480px) {
+  .logo {
+      font-size: 20px;
+  }
+
+  .nav-list a {
+      font-size: 14px;
+  }
+
+  .hero h1 {
+      font-size: 24px;
+  }
+
+  .hero p {
+      font-size: 14px;
+  }
+
+  #intro {
+      font-size: 14px;
+  }
+
+
+  .service img {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center; /* Center the nav items */
+  }
+  .top-bar .container {
+    flex-direction: column; /* Stack logo and nav on top of each other */
+    align-items: center; /* Center the logo and nav */
+  }
+}
